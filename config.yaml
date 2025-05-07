@@ -1,0 +1,50 @@
+task:
+  "旅行计划": # The value of "category" in the seed data
+    task_name: "旅行计划/攻略制定" # Customized task names
+    columns: ['destination', 'day', 'time','cost','who','play'] # Keys in the seed data
+    columns_description: ['目的地（城市名称）','游玩天数','时间（具体的月份)','人均预算','和谁同行','玩法'] # Explanation of key names
+    keys_prob: [0.8,0.7,0.6,0.6,0.6,0.6] # Probability of each key (intention) being selected
+    mean: -1 # Mean of the Gaussian distribution. "-1" indicates the default value, which is half the number of intentions.
+    std: 2 # Standard deviation of the Gaussian distribution
+    max_turns: 7 # Maximum number of dialogue rounds
+  "景点":
+    task_name: "景点推荐"
+    columns: ['destination','location','type']
+    columns_description: ['目的地（城市名称）','位置（城市内部的商圈或地区）','景点类型']
+    keys_prob: [0.7,0.5,0.5]
+    mean: -1
+    std: 2
+    max_turns: 4
+  "美食":
+    task_name: "美食餐厅推荐"
+    columns: ['destination','location','cuisine', 'price']
+    columns_description: ['目的地（城市名称）','位置（城市内部的景点或地区）','美食类型','预算等级']
+    keys_prob: [0.7,0.5,0.5,0.5]
+    mean: -1
+    std: 2
+    max_turns: 5
+  "住宿":
+    task_name: "住宿预定"
+    columns: ['destination','location','stay','price','hotel_type','room_type']
+    columns_description: ['目的地（城市名称）','位置（城市内部的景点或地区）','起止日期（入住日期和退房日期）','住宿星级','住宿类型','房型']
+    keys_prob: [0.7,0.6,0.6,0.5,0.5,0.5]
+    mean: -1
+    std: 2
+    max_turns: 7
+  "购物":
+    task_name: "购物场所查询"
+    columns: ['destination','location','type']
+    columns_description: ['目的地（城市名称）','位置（城市内部的商圈或地区）','购物类型']
+    keys_prob: [0.7,0.5,0.5]
+    mean: -1
+    std: 2
+    max_turns: 4
+  "火车票":
+    task_name: "火车票预定"
+    columns: ['dStation','aStation','dDate','departure_time','train_type','seat_type']
+    columns_description: ['出发地','目的地','出发日期','出发时间区间','火车类型','座位类型']
+    keys_prob: [0.8,0.8,0.7,0.6,0.6,0.6]
+    mean: -1
+    std: 2
+    max_turns: 7
+
