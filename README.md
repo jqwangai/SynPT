@@ -57,6 +57,7 @@ Note the modification of the parameters in the code file.
 
 ## 📊 Data sets and model weights
 - SynPCT-Dialog can be found in the file [`train_data/SynPCT-Dialog.json`](./train_data/SynPCT-Dialog.json)
+
 - Qwen-PCT's LoRA weights can be found in this [url](https://drive.google.com/drive/folders/1G0M578Ht7RLAwFHfjZqN43JOKjJTZUcj?usp=sharing).
 ## 📷 Case Studies
 **7.1 Executing user intentions**
