@@ -145,7 +145,7 @@ async def main():
     args = parser.parse_args()
 
     if args.output_file is None:
-        args.output_file = f"data/synpct_{args.user_model_name}_{args.assistant_model_name}.jsonl"
+        args.output_file = f"data/synpt_{args.user_model_name}_{args.assistant_model_name}.jsonl"
 
     # Initialize model clients
     user_client = OpenAI(api_key=args.user_api_key, base_url=args.user_base_url)

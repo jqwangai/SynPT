@@ -1,7 +1,7 @@
 import json
 
-input_file = r'data\synpct_Doubao-pro_Doubao-pro.jsonl'
-output_file = r'train_data\synpct_Doubao-pro_Doubao-pro.json'
+input_file = r'data\synpt_Doubao-pro_Doubao-pro.jsonl'
+output_file = r'train_data\synpt_Doubao-pro_Doubao-pro.json'
 
 with open(input_file, 'r', encoding='utf-8') as f:
     input_list = [json.loads(line) for line in f]
