@@ -61,11 +61,14 @@ Note the modification of the parameters in the code file.
 - Document [`case_studies/7_1_1.md`](./case_studies/7_1_1.md) shows examples of Qwen-PT's execution of user intentions.
 - Document [`case_studies/7_1_2.md`](./case_studies/7_1_2.md) shows examples of larger language models that execute user intentions.
 
-**7.2 An Agent workflow**
+**7.2 An Practical Agent workflow**
 - Document [`case_studies/7_2.md`](./case_studies/7_2.md) presents sample output from the designed Agent workflow.
   
 **7.3 Compatibility of other tasks**
 - Document [`case_studies/7_3.md`](./case_studies/7_3.md) displays sample output from Qwen-PT for other tasks.
+
+**7.4 Compatibility in English-Language scenarios**
+- Document [`case_studies/7_4.md`](./case_studies/7_4.md) displays sample output from Qwen-PT for English-Language scenarios.
 
 **Example of initial inquiry**
 - Document [`case_studies/example_of_initial_inquiry.xlsx`](./case_studies/example_of_initial_inquiry.xlsx) shows example output from Table 2 in the paper.
