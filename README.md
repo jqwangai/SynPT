@@ -60,7 +60,7 @@ Note the modification of the parameters in the file.
 ### Example
 **Chinese example**:
 
-**👤**用户**：制定一个4天的旅行计划，时间不限
+👤**用户**：制定一个4天的旅行计划，时间不限
 
 🤖**助手**：<think>[思考过程]：用户意图思考：
 咨询任务：旅行计划/攻略制定
