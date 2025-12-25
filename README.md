@@ -58,6 +58,83 @@ Note the modification of the parameters in the file.
 - Qwen-PT's LoRA weights can be found in this [url](https://drive.google.com/drive/folders/1G0M578Ht7RLAwFHfjZqN43JOKjJTZUcj?usp=sharing).
 
 ### Example
+**English example**:
+
+👤**用户**：Plan a 2-day trip to Las Vegas
+
+🤖**助手**：<think>[Thought Process]：User Intent Thinking:
+Consultation task: Travel Planning
+Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2]
+Intentions not yet provided: [Time (specific month), Per capita budget, Travel companions, Activities/Play style]
+
+The intention type that the user is required to supplement this round is: Time (specific month).
+
+User Emotional Thinking:The user's reply does not contain signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply makes a request for a trip plan, indicating a willingness to continue the conversation to receive relevant information. 
+So the conclusion is that the user is willing to continue the conversation. 
+Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay and the current intent to be filled is the specific month, common months for travel are those with pleasant weather and tourist-friendly conditions. Months like June, August, and September are popular choices as they generally have good weather and are not peak tourist seasons which can be too crowded. June is a great month for travel as it has mild temperatures and fewer tourists compared to July and August. August is also a good option with warm weather, but it's important to note that it can be very hot in Las Vegas. September is another good month with comfortable temperatures and fewer tourists than the summer months.
+Reference Options:June, August, September
+</think><answer>[Response]：Great job on providing clear details! Now we need to figure out the specific month for your trip to Las Vegas. So, which month do you plan to go? Is it June, August, or September? </answer>
+
+👤**用户**：June
+
+🤖**助手**：<think>[Thought Process]：User Intent Thinking:
+Consultation task: Travel Planning
+Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June]
+Intentions not yet provided: [Per capita budget, Travel companions, Activities/Play style]
+
+The intention type that the user is required to supplement this round is: Per capita budget.
+
+User Emotional Thinking:The user's reply does not show signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required month for the trip, indicating a willingness to continue the conversation. 
+So the conclusion is that the user is willing to continue the conversation. 
+Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay in June and now needs to provide the per capita budget, common budget ranges for travel can be considered. A low budget might be around \$500 per person, a medium budget could be around \$1000 per person, and a high budget could be around \$2000 per person. These ranges cover a wide spectrum of affordability for different types of travelers.
+Reference Options:Less than \$500 per person, \$500 - \$1000 per person, More than \$1000 per person
+</think><answer>[Response]：You're on a roll! Your answer was spot-on. Now we need to figure out the per capita budget for your trip to Las Vegas in June. Are you looking at a budget of less than \$500 per person, \$500 - \$1000 per person, or more than \$1000 per person? </answer>
+
+👤**用户**：\$1000 per person
+
+🤖**助手**：<think>[Thought Process]：User Intent Thinking:
+Consultation task: Travel Planning
+Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: \$1000 per person]
+Intentions not yet provided: [Travel companions, Activities/Play style]
+
+The intention type that the user is required to supplement this round is: Travel companions.
+
+User Emotional Thinking:The user's reply does not show signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required information about the per capita budget, indicating a willingness to continue the conversation. 
+So the conclusion is that the user is willing to continue the conversation. 
+Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay in June and a per capita budget of $1000, when considering travel companions, common options could be traveling alone, traveling with family, or traveling with friends. These are three very likely scenarios that the user might choose from when it comes to travel companions.
+Reference Options:Traveling alone, Traveling with family, Traveling with friends
+</think><answer>[Response]：Great job! Your answer was really clear. Now we need to figure out who you'll be traveling with. Are you traveling alone, with family, or with friends? </answer>
+
+👤**用户**：family
+
+🤖**助手**：<think>[Thought Process]：User Intent Thinking:
+Consultation task: Travel Planning
+Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: \$1000 per person, Travel companions: family]
+Intentions not yet provided: [Activities/Play style]
+
+The intention type that the user is required to supplement this round is: Activities/Play style.
+
+User Emotional Thinking:The user's reply does not contain signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required information about travel companions, indicating a willingness to continue the conversation. 
+So the conclusion is that the user is willing to continue the conversation. 
+Thinking on the Intent values:Thinking process: Since the user is planning a trip to Las Vegas with family for 2 days in June with a per capita budget of $1000 and traveling with family, when considering activities/play style, common options could be family-friendly activities that are popular in Las Vegas. Some likely activities could be visiting attractions that are suitable for families, enjoying shows that are family-oriented, and engaging in activities that allow for family bonding. These options align with the travel companions being family and the overall context of the trip.
+Reference Options:Visiting family-friendly attractions, Enjoying family-oriented shows, Family bonding activities
+</think><answer>[Response]：You're on a roll! Your answer was spot-on. Now we need to figure out the activities/play style for your trip to Las Vegas. Are you interested in visiting family-friendly attractions, enjoying family-oriented shows, or doing family bonding activities? </answer>
+
+👤**用户**： enjoying family-oriented shows
+
+🤖**助手**：<think>[Thought Process]：User Intent Thinking:
+Consultation task: Travel Planning
+Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: $1000 per person, Travel companions: family, Activities/Play style: enjoying family-oriented shows]
+Intentions not yet provided: []
+
+The intention type that the user is required to supplement this round is: None.
+
+</think>
+<summary>[User Intent Summary]：```Consultation Task: Travel Planning
+User Intent: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: $1000 per person, Travel companions: family, Activities/Play style: Enjoying family-oriented shows]```</summary>
+
+---
+
 **Chinese example**:
 
 👤**用户**：制定一个4天的旅行计划，时间不限
@@ -142,82 +219,6 @@ Note the modification of the parameters in the file.
 </think><summary>[用户意图总结]：```咨询任务: 旅行计划/攻略制定
 用户意图: [游玩天数: 四天, 目的地（城市名称）: 青岛, 时间（具体的月份）: 初秋, 人均预算: 一千五百元, 和谁同行: 与家人, 玩法: 跟团游]```</summary>
 
----
-
-**English example**:
-
-👤**用户**：Plan a 2-day trip to Las Vegas
-
-🤖**助手**：<think>[Thought Process]：User Intent Thinking:
-Consultation task: Travel Planning
-Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2]
-Intentions not yet provided: [Time (specific month), Per capita budget, Travel companions, Activities/Play style]
-
-The intention type that the user is required to supplement this round is: Time (specific month).
-
-User Emotional Thinking:The user's reply does not contain signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply makes a request for a trip plan, indicating a willingness to continue the conversation to receive relevant information. 
-So the conclusion is that the user is willing to continue the conversation. 
-Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay and the current intent to be filled is the specific month, common months for travel are those with pleasant weather and tourist-friendly conditions. Months like June, August, and September are popular choices as they generally have good weather and are not peak tourist seasons which can be too crowded. June is a great month for travel as it has mild temperatures and fewer tourists compared to July and August. August is also a good option with warm weather, but it's important to note that it can be very hot in Las Vegas. September is another good month with comfortable temperatures and fewer tourists than the summer months.
-Reference Options:June, August, September
-</think><answer>[Response]：Great job on providing clear details! Now we need to figure out the specific month for your trip to Las Vegas. So, which month do you plan to go? Is it June, August, or September? </answer>
-
-👤**用户**：June
-
-🤖**助手**：<think>[Thought Process]：User Intent Thinking:
-Consultation task: Travel Planning
-Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June]
-Intentions not yet provided: [Per capita budget, Travel companions, Activities/Play style]
-
-The intention type that the user is required to supplement this round is: Per capita budget.
-
-User Emotional Thinking:The user's reply does not show signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required month for the trip, indicating a willingness to continue the conversation. 
-So the conclusion is that the user is willing to continue the conversation. 
-Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay in June and now needs to provide the per capita budget, common budget ranges for travel can be considered. A low budget might be around \$500 per person, a medium budget could be around \$1000 per person, and a high budget could be around \$2000 per person. These ranges cover a wide spectrum of affordability for different types of travelers.
-Reference Options:Less than \$500 per person, \$500 - \$1000 per person, More than \$1000 per person
-</think><answer>[Response]：You're on a roll! Your answer was spot-on. Now we need to figure out the per capita budget for your trip to Las Vegas in June. Are you looking at a budget of less than \$500 per person, \$500 - \$1000 per person, or more than \$1000 per person? </answer>
-
-👤**用户**：\$1000 per person
-
-🤖**助手**：<think>[Thought Process]：User Intent Thinking:
-Consultation task: Travel Planning
-Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: \$1000 per person]
-Intentions not yet provided: [Travel companions, Activities/Play style]
-
-The intention type that the user is required to supplement this round is: Travel companions.
-
-User Emotional Thinking:The user's reply does not show signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required information about the per capita budget, indicating a willingness to continue the conversation. 
-So the conclusion is that the user is willing to continue the conversation. 
-Thinking on the Intent values:Thinking process: Since the user is engaged in travel planning for Las Vegas with a 2-day stay in June and a per capita budget of $1000, when considering travel companions, common options could be traveling alone, traveling with family, or traveling with friends. These are three very likely scenarios that the user might choose from when it comes to travel companions.
-Reference Options:Traveling alone, Traveling with family, Traveling with friends
-</think><answer>[Response]：Great job! Your answer was really clear. Now we need to figure out who you'll be traveling with. Are you traveling alone, with family, or with friends? </answer>
-
-👤**用户**：family
-
-🤖**助手**：<think>[Thought Process]：User Intent Thinking:
-Consultation task: Travel Planning
-Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: \$1000 per person, Travel companions: family]
-Intentions not yet provided: [Activities/Play style]
-
-The intention type that the user is required to supplement this round is: Activities/Play style.
-
-User Emotional Thinking:The user's reply does not contain signs of anxiety, reluctance to continue the conversation, or a desire to get an immediate answer. The user simply provides the required information about travel companions, indicating a willingness to continue the conversation. 
-So the conclusion is that the user is willing to continue the conversation. 
-Thinking on the Intent values:Thinking process: Since the user is planning a trip to Las Vegas with family for 2 days in June with a per capita budget of $1000 and traveling with family, when considering activities/play style, common options could be family-friendly activities that are popular in Las Vegas. Some likely activities could be visiting attractions that are suitable for families, enjoying shows that are family-oriented, and engaging in activities that allow for family bonding. These options align with the travel companions being family and the overall context of the trip.
-Reference Options:Visiting family-friendly attractions, Enjoying family-oriented shows, Family bonding activities
-</think><answer>[Response]：You're on a roll! Your answer was spot-on. Now we need to figure out the activities/play style for your trip to Las Vegas. Are you interested in visiting family-friendly attractions, enjoying family-oriented shows, or doing family bonding activities? </answer>
-
-👤**用户**： enjoying family-oriented shows
-
-🤖**助手**：<think>[Thought Process]：User Intent Thinking:
-Consultation task: Travel Planning
-Intentions already provided: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: $1000 per person, Travel companions: family, Activities/Play style: enjoying family-oriented shows]
-Intentions not yet provided: []
-
-The intention type that the user is required to supplement this round is: None.
-
-</think>
-<summary>[User Intent Summary]：```Consultation Task: Travel Planning
-User Intent: [Destination (city name): Las Vegas, Duration of stay (days): 2, Time (specific month): June, Per capita budget: $1000 per person, Travel companions: family, Activities/Play style: Enjoying family-oriented shows]```</summary>
 
 ## 📷 Case Studies
 **7.1 Executing user intentions**
